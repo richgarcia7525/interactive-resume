@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin : 0;
+    padding: 0;
+    background-color: #111111;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #111111;
+    color: #39ff14;
+    text-shadow: 0 0 10px #39ff14, 0 0 20px #0ff, 0 0 30px #ff00ff;
+    border-bottom: 2px solid #ff00ff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+#about-me {
+    background-color: #111111;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    border: 2px solid #39ff14;
+    box-shadow: 0 0 10px #39ff14, 0 0 #0ff, 0 0 30px #ff00ff;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+#about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px #39ff14, 0 0 20px #ff00ff;
+}
+
+#about-me p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #eeeeee;
+}
+
+.comet {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #39ff14, transparent);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: comet-fade 0.5s linear;
+}
+
+@keyframes comet-fade {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(3);
+    }
+}
